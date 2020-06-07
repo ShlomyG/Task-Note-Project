@@ -1,0 +1,92 @@
+body {background-image: Url(Images/tile.jpg);
+    margin: 0px;
+    }
+    
+    h1 {
+    font-family: "Sofia";
+    font-size: 38px;
+    text-shadow: 6px 6px 6px rgb(251, 255, 14);
+    margin: 16px;
+}
+    #new_task {
+    font-family: "Sofia";
+    font-size: 26px;
+}
+    form  {
+    font-family: "Sofia";
+    font-size: 22px;
+}
+    input, textarea {
+        font-family: 'Aclonica';font-size: 18px;
+        border-radius: 5px;
+
+    }
+ 
+    
+#notebook {background-image: url(Images/paper-line.jpg);
+    background-size: cover;
+width: 900px; max-width: 100%;
+height: 250px;
+border-radius: 15px;
+overflow: auto;}
+#Panel { padding-right: 20px; padding-left: 20px;
+display: flex; flex-wrap: wrap; margin-top: 3px;}
+#Panel>div {  position: relative;
+    box-sizing: border-box;
+margin: 6px;
+padding-top: 20px;
+}
+
+
+  #Panel>div:hover > span {
+    visibility: visible;
+  }
+
+
+
+
+/*   
+  div div:hover {
+    transform: scale(1.1);
+} */
+
+.addTask {
+  
+    width: 200px; height: 250px; 
+    background: url(Images/notebg.png) no-repeat;
+    background-size: cover;
+    font-family: 'Aclonica';
+    
+   
+}
+
+
+span{ position: absolute;
+    top: 10%;
+    left: 85%;
+    position: absolute;
+    top: 8%;
+    left: 77%;
+     visibility: hidden;   }
+span:hover{cursor: pointer;}
+p:first-of-type{padding: 5px 22px 5px 2px; font-size:22px; text-align: center; height: 46%; overflow: auto;}
+p~p{font-size:14px; margin-left:10px;margin-top: 1px ;margin-bottom: 1px; }
+
+
+/* 
+input:focus:invalid {
+  box-shadow: none;
+} */
+
+
+textarea:required,
+input:required {
+    border: 1px solid #000000;
+    border-left: 4px solid white;
+
+    border-left-color: palegreen;
+  }
+  textarea:invalid,
+ input:invalid {
+    border-left-color: red; 
+  }

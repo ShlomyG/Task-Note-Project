@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+
+
+    <title>Task Board By Shlomy Gerstner</title>
+</head>
+<body>
+    <center>
+
+        <h1>My Task Board</h1>
+        <div id="notebook">
+            <header id="new_task"><u>Add a new note</u></header>
+            <form >
+                
+                <label style="padding-right: 300px;" aria-label="required" >Task Note: </label><br>
+                <textarea name="yourNote" id="yourNote" rows="3" cols="50"  required	autofocus ></textarea><br>
+                <label >Task Date: </label>
+                <input type="date"id="yourDate" name="Date" required >
+                <label>Task Time: </label>
+                <input type="time" id="yourTime" name="Time"  ><br>
+                <input type="submit" id ="mySubmit" value="Create Task" style="background-color: yellowgreen;font-size: 22px;">
+                <input type="reset" value="Clear" style="background-color: red; font-size: 20px;">
+                
+        </form>
+    </div>
+        
+</center>
+    
+        <div id="Panel">
+
+
+        </div>
+
+
+        
+
+    <script src="app.js"></script>
+</body>
+</html>
