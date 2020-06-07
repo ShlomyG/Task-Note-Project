@@ -19,6 +19,7 @@ window.onload =function () {
     if (!temp){return}
    else{
      NoteArr = JSON.parse(temp);
+
     for (var i = 0; i <NoteArr.length; i++) {
         NoteCreate(NoteArr[i].task,NoteArr[i].date,NoteArr[i].time);}
     counterId =NoteArr.length
@@ -75,3 +76,9 @@ div.appendChild(pTime)
 panelNotes.appendChild(div)}
 
 
+// function removeNote(e) {
+// NoteArr.splice(e.id,1)
+// e.parentNode.parentNode.removeChild(e)
+
+
+//   }
